@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profil - FakeInsta</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/profile.css">
+</head>
+
+<body>
+
+  <header class="topbar">
+    <div class="brand">FakeInsta</div>
+    <div class="actions">
+      <button id="toHomeBtn">Anasayfa</button>
+      <button id="logoutBtn">Çıkış</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="profile-info">
+      <div class="avatar">
+        <img src="https://via.placeholder.com/100" alt="Profil Foto">
+      </div>
+      <div class="user-details">
+        <h2 id="profileName">Kullanıcı Adı</h2>
+        <p id="profileUsername">@username</p>
+        <p id="postCount">0 Post | 0 Followers | 0 Following</p>
+      </div>
+    </section>
+
+    <section id="profilePosts" class="profile-posts grid">
+      <!-- Kullanıcının postları buraya gelecek -->
+    </section>
+  </main>
+
+  <script type="module" src="/js/profile.js"></script>
+</body>
+
+</html>

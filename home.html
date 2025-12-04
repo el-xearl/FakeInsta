@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - FakeInsta</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+
+<header class="topbar">
+    <div class="brand" style="display:flex; align-items:center; gap:8px; cursor:pointer;">
+        <!-- Fake Instagram Logo -->
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="#E1306C">
+            <path d="M7 2C4.239 2 2 4.239 2 7v10c0 2.761 2.239 5 5 5h10c2.761 0 5-2.239 5-5V7c0-2.761-2.239-5-5-5H7zm0 2h10c1.654 0 3 1.346 3 3v10c0 1.654-1.346 3-3 3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 3-3zm12 1a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6z"/>
+        </svg>
+
+        <span style="font-size:22px; font-weight:600;">FakeInsta</span>
+    </div>
+
+    <div class="actions">
+        <button id="toProfileBtn">Profil</button>
+        <button id="logoutBtn">Çıkış</button>
+    </div>
+</header>
+
+
+<main class="container">
+
+    <div id="stories" class="stories-container"></div>
+
+<!-- Story Modal -->
+<div id="storyModal" class="story-modal hidden">
+    <div class="story-content">
+        <img id="storyImage" src="">
+    </div>
+</div>
+
+    <!-- Instagram tarzı feed -->
+    <section id="feed" class="feed"></section>
+    
+
+</main>
+
+
+<!-- Home JS -->
+<script type="module" src="/js/home.js"></script>
+<footer class="footer">
+    <p>FakeInsta © 2025 • Tüm Hakları Saklıdır</p>
+</footer>
+
+
+</body>
+</html>

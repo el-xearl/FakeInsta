@@ -1,0 +1,129 @@
+:root {
+    --bg: #fafafa;
+    --card: #fff;
+    --muted: #666;
+    --accent: #3897f0;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, Segoe UI, Arial;
+    background: var(--bg);
+    margin: 0;
+    color: #111
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 16px
+}
+
+.topbar {
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 10
+}
+
+.brand {
+    font-weight: 700
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px
+}
+
+
+/* Card common */
+.card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-shadow: var(--shadow)
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+
+a {
+    color: inherit
+}
+
+
+@media (max-width:600px) {
+    .container {
+        padding: 0 12px
+    }
+}
+
+#postsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #ffffff15;
+    padding: 15px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    border: 1px solid #ffffff30;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.user {
+    margin-top: 10px;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
+    border-top: 1px solid #e1e1e1;
+    background: #fafafa;
+}
+.like-count {
+    color: red;
+}
