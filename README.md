@@ -56,37 +56,6 @@ fetch("data/users.json");
 fetch("data/photos.json");
 fetch("data/comments.json");
 ```
-
----
-
-## 📂 Project Structure
-
-```
-/css
-    style.css
-    home.css
-
-/js
-    app.js
-    feed.js
-    api.js
-
-/data
-    users.json
-    posts.json
-    photos.json
-    comments.json
-
-/img
-    (icons & images)
-
-home.html
-login.html
-README.md
-```
-
----
-
 ## 🛠 Technologies Used
 
 * HTML5
